@@ -1,0 +1,34 @@
+COMO USAR LA APLICACION:
+
+La aplicacion esta realizada pensando en USUARIOS, por lo que es necesario registrarse con un nombre de usuario, email y contraseña.
+
+En la pagina principal, encontrara un mensaje de bienvenida con un boton de "view tasks" el cual lo direccionara al "Login Page"
+
+Una vez en el Login Page usted debera Loguear con su Email y Contraseña, en caso de no poseer aun una cuenta, en el mismo lugar se le ofrece la opcion para registrarse
+
+En la pagina de registro, usted observa la leyenda "get an account" solicitandole a usted datos de Username, Email y Password, una vez realizado esto presionando el boton REGISTER sera direccionado a la pagina de tareas que posee ese usuario.
+(importante: aqui hay reglas basicas en donde es necesario completar los 3 campos sin falta, ademas que el email debe poseer estructura de email y la contraseña debe poseer un minimo de 6 caracteres; Caso contrario saltara una alerta y no podra registrarse)
+
+Una vez dentro de la pagina de tareas, al ser un usuario nuevo observara que esta se encuentra vacia con la breve descripcion de "no tasks", pero en la parte superior derecha de la pantalla tendra un saludo al lado de dos botones, Add Task y Logout, como mencionan los botones uno refiere crear una tarea nueva y con el otro nos salimos de la cuenta.
+
+al presionar el boton add task nos llevara a la pagina donde completaremos un formulario que solicita: Titulo, Descripcion y Categoria,
+con un sobrio boton de SAVE, el cual guarda la tarea, redirigiendolo a usted a la pagina principal donde se encuentran sus tareas; ahora esta posee un formato de carta, en donde ve el titulo, descripcion y categoria sobre el lado izquierdo y sobre el lado derecho tres botones, uno para eliminar, otro para editar y un ultimo boton para marcar como realizada la tarea.
+Al presionar el boton Eliminar, este elimina por completo la tarea de la BBDD.
+al presionar el boton Editar, este lo devuelve a la pantalla de carga de datos pero con los datos de la tarea en cuestion, para acomodar los datos que crea necesario, volviendo a salvar el mismo archivo.
+Al presionar el boton de estado, este cambiara de una CRUZ ROJA a una TILDE VERDE.
+
+Notara que al agregar tareas tambien se despliega un filtro arriba de las tarjetas, este mismo sirve para filtrar entre las tareas que posee por categoria, por default muestra todas, teniendo la opcion de filtrar entre tres categorias "hobby", "work" y "task".
+
+Por ultimo y no menos importante, podra realizar un LOGOUT para salir de su cuenta, de esta forma usted poseera las tareas en su cuenta y si crea otra cuenta, esta tendra sus propias tareas, almacenando la informacion por cada cuenta.
+
+FEATURES:
+*si un email ya fue registrado, la app avisara que el email esta en uso
+*si la contraseña es corta, la app avisara que la password debe tener 6 caracteres minimo
+*si introduzco un correo o password incorrecto, la app le avisara mediante mensaje en rojo
+*los mensajes en rojo poseen un tiempo de visibilidad de 3 segundos
+*las funciones de las tareas se encuentran bajo endpoints protegidos, es decir, si usted no tiene credencial (loguin) no podra acceder mediante links
+*al intentar acceder a un link como /add-task o /tasks , si usted no posee las cookies, lo llevara a la pagina de login para que obtenga una credencial
+*si usted presiona logout en una pagina protegida, esta lo redireccionara de forma inmediata al login page
+*al presionar "to do list app" arriba a la izquierda, lo llevara a la home page, la cual si usted se encontraba logueado, le permitira volver a la pagina de tareas con el boton View Tasks.
+*si la pagina la reduce en tamaño, las tareas acomodaran las tarjetas de forma vertical para mejorar la visibilidad.
+
